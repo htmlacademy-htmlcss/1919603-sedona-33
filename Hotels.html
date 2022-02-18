@@ -120,32 +120,40 @@
                     До
                 </label>
               </fieldset>
-              <button class="button catalog-filter-group-button" type="submit">Применить</button>
-              <button class="reset" type="reset">Сбросить</button>
+              <div class="catalog-filter-group-button">
+                <button class="button catalog-header-button" type="submit">Применить</button>
+                <button class="reset" type="reset">Сбросить</button>
+              </div>
             </form>
           </section>
         </header>
 
         <section class="catalog-hotels-search">
-          <form class="hotel-list-form-header" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="catalog-hotel-group-header">
-              <legend class="control hotel-list-form-header-legend">Найдено гостиниц: 38</legend>
-              <select class="select-control" aria-label="Сортировка">
-                <option value="popular">Сначала популярное</option>
-                <option value="cheap">Сначала дешёвое</option>
-                <option value="expensive">Сначала дорогое</option>
-              </select>
-              <a class="button" href="#">
-                <span class="visually-hidden">Показать карточки</span>
-              </a>
-              <a  class="button" href="#">
-                <span class="visually-hidden">Показать все</span>
-              </a>
-              <a class="button" href="#">
-                <span class="visually-hidden">Показать список</span>
-              </a>
-            </fieldset>
-          </form>
+          <div class="catalog-hotel-group-header">
+            <h2 class="control hotel-list-form-header-legend">Найдено гостиниц: 38</h2>
+            <select class="select-control" aria-label="Сортировка">
+              <option value="popular">Сначала популярное</option>
+              <option value="cheap">Сначала дешёвое</option>
+              <option value="expensive">Сначала дорогое</option>
+            </select>
+            <ul class="catalog-hotels-search-list">
+              <li class="catalog-hotels-search-list-item">
+                <a class="button" href="#">
+                  <span class="visually-hidden">Показать карточки</span>
+                </a>
+              </li>
+              <li class="catalog-hotels-search-list-item">
+                <a  class="button" href="#">
+                  <span class="visually-hidden">Показать все</span>
+                </a>
+              </li>
+              <li class="catalog-hotels-search-list-item">
+                <a class="button" href="#">
+                  <span class="visually-hidden">Показать список</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section class="catalog-hotels-main">
@@ -241,8 +249,6 @@
                 </a>
               </li>
             </ul>
-          </div>
-          <div>
             <label class="hotels-on-page-label">Гостиниц на странице:
               <select name="hotels-on-page">
                 <option value="4">4</option>
@@ -257,7 +263,7 @@
 
     <footer class="page-footer">
       <div class="page-footer-container">
-        <section class="newsletter">
+        <section class="newsletter-catalog">
           <h2 class="page-footer-title-no-backgound">Подпишитесь на рассылку</h2>
           <p class="page-footer-subtitle-no-backgound">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
