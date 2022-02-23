@@ -129,7 +129,7 @@
         </header>
 
         <section class="catalog-hotels-search">
-          <div class="catalog-hotel-group-header">
+          <div class="catalog-hotel-group-header">o
             <h2 class="control hotel-list-form-header-legend">Найдено гостиниц: 38</h2>
             <select class="select-control" aria-label="Сортировка">
               <option value="popular">Сначала популярное</option>
@@ -226,7 +226,7 @@
                 </a>
               </li>
               <li class="pagination-item">
-                <a class="pagination-link pagination-current">1</a>
+                <a class="pagination-link" href="#">1</a>
               </li>
               <li class="pagination-item">
                 <a class="pagination-link" href="#">2</a>
@@ -249,13 +249,16 @@
                 </a>
               </li>
             </ul>
-            <label class="hotels-on-page-label">Гостиниц на странице:
-              <select name="hotels-on-page">
+            <div class="hotels-on-page-label">
+              <p class="hotels-on-page-label-title">
+                Гостиниц на странице:
+              </p>
+              <select name="hotels-on-page" class="hotels-on-page">
                 <option value="4">4</option>
                 <option value="8">8</option>
                 <option value="12">12</option>
               </select>
-            </label>
+            </div>
           </div>
         </section>
       </div>
