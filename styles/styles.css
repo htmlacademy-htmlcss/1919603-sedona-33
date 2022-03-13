@@ -53,29 +53,61 @@ body {
   fill: rgba(117, 98, 87, 0.3);
 }
 
-.fill-good:hover {
+.loupe:hover,
+.heart:hover {
+  color: #756257;
   fill: #756257;
 }
 
-.fill-good:active {
+.loupe:active,
+.heart:active {
+  color: rgba(117, 98, 87, 0.3);
   fill: rgba(117, 98, 87, 0.3);
 }
 
-.button:hover,
-.hotel-card-button-favorites:hover {
+.button:hover {
   background-color: #615048;
 }
 
-.button:focus,
-.hotel-card-button-favorites:focus {
+.button:focus {
   outline: 3px solid #83B3D3;
   background-color: #615048;
 }
 
-.button:active,
-.hotel-card-button-favorites:active {
+.button:active {
   background-color: #615048;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel-card-button-favorites:hover {
+  background-color: #68A2CA;
+}
+
+.hotel-card-button-favorites:focus {
+  outline: 3px solid #615048;
+  background-color: #68A2CA;
+}
+
+.hotel-card-button-favorites:active {
+  background-color: #68A2CA;
+  outline: 1px solid #756257;
+  color: #FFFFFF;
+  opacity: 0.3;
+}
+
+.hotel-card-button-favorites-active:hover {
+  background-color: #6C9E42;;
+}
+
+.hotel-card-button-favorites-active:focus {
+  outline: 3px solid #615048;
+  background-color: #6C9E42;
+}
+
+.hotel-card-button-favorites-active:active {
+  background-color: #6C9E42;
+  color: #FFFFFF;
+  opacity: 0.3;
 }
 
 .field:hover {
@@ -122,13 +154,13 @@ body {
 
 .htmlacademy-link:hover  {
   fill: #756257;
+  color: #756257;
 }
 
 .htmlacademy-link:focus  {
   outline: 3px solid #83B3D3;
   border-radius: 10px;
   color: #756257;
-  padding: 13px 20px;
 }
 
 .htmlacademy-link:active  {
@@ -243,7 +275,7 @@ body {
 
 /* header */
 .page-header {
-  margin: -5px auto;
+  margin: -3px auto;
 }
 
 .navigation {
@@ -266,23 +298,13 @@ body {
 }
 
 .navigation-link {
-  display: block;
-  padding: 0 19px;
-}
-
-.navigation-user .navigation-link {
-  min-width: 16px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 17px;
 }
 
 .navigation-item-active {
-  border-bottom: 2px solid black;
-  padding-top: 15px;
-  padding-bottom: 20px;
-}
-
-.navigation-item-notactive {
-  padding-top: 15px;
-  padding-bottom: 22px;
+  box-shadow: inset 0 -3px 0 0 #000000;
 }
 
 .navigation-user {
@@ -298,7 +320,22 @@ body {
   text-decoration: none;
 }
 
+.loupe {
+  background-image: url("../images/header/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+  width: 42px;
+  height: 66px;
+}
+
 .heart {
+  background-image: url("../images/header/favorite.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+  width: 42px;
+  height: 66px;
   margin-right: 20px;
 }
 
@@ -336,7 +373,7 @@ body {
 
 .main-page-welcome-divider {
   position: absolute;
-  top: 485px;
+  top: 489px;
 }
 
 .main-header-title {
@@ -712,12 +749,39 @@ body {
   width: 40px;
 }
 
+.htmlacademy-link {
+  box-sizing: border-box;
+  background-image: url("../images/footer/logo_htmlacademy.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 160px;
+  height: 70px;
+}
+
 .footer-social-button {
-  vertical-align: middle;
-  text-align: center;
-  padding: 9px 7px;
-  padding-bottom: 6px;
-  min-width: 40px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.twitter {
+  background-image: url("../images/footer/twitter-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.facebook {
+  background-image: url("../images/footer/facebook-2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.youtube {
+  background-image: url("../images/footer/youtube-3.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .Telephone {
@@ -731,6 +795,7 @@ body {
   color: #000000;
   margin-top: 40px;
   margin-bottom: 30px;
+  padding: 15px;
   }
 
 .newsletter-button {
@@ -804,7 +869,8 @@ body {
 }
 
 .hotel-card-button-more,
-.hotel-card-button-favorites {
+.hotel-card-button-favorites,
+.hotel-card-button-favorites-active {
   width: 140px;
   text-decoration: none;
 }
@@ -1051,6 +1117,21 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #83B3D3;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 0 9px 0;
+}
+
+.hotel-card-button-favorites-active {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #7DB54F;
   margin-bottom: 16px;
   border: none;
   border-radius: 10px;
