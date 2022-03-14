@@ -1419,6 +1419,25 @@ body {
   margin-top: 30px;
 }
 
+.label-subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  width: 420px;
+  height: 29px;
+  margin: 0 auto;
+  margin-left: 155px;
+  vertical-align: text-top;
+  display: flex;
+  align-items: center;
+  margin-bottom: 11px;
+}
+
+.modal-form-date-in .label-subtitle {
+  color: #FF5757;
+}
+
 .hotels-on-page {
   width: 160px;
   max-height: 48px;
@@ -1468,9 +1487,9 @@ body {
 
 .form-label-inout {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
 }
 
 .modal {
