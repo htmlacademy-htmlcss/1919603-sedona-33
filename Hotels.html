@@ -32,6 +32,7 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link heart" href="#">
+              <span class="like">12</span>
               <span class="visually-hidden">
                 Избранное
               </span>
@@ -74,24 +75,24 @@
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
-                    <label class="check control-catalog-filter-item">
+                    <label class="control-catalog-filter-item">
                       <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                      <span class="check--box"></span>
-                        Бассейн
+                      <span class="control-mark"></span>
+                      <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="check control-catalog-filter-item">
-                      <span class="check--box"></span>
+                    <label class="control-catalog-filter-item">
                       <input class="control-input" type="checkbox" name="parking" checked>
-                        Парковка
+                      <span class="control-mark"></span>
+                      <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="check control-catalog-filter-item">
-                      <span class="check--box"></span>
+                    <label class="control-catalog-filter-item">
                       <input class="control-input" type="checkbox" name="Wi-Fi">
-                        Wi-Fi
+                      <span class="control-mark"></span>
+                      <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -102,20 +103,23 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control-catalog-filter-item">
-                      <input class="control-input-radio" type="radio" name="hotels-group" value="hotel" checked>
-                        Гостиница
+                      <input class="control-input" type="radio" name="hotels-group" value="hotel" checked>
+                      <span class="control-mark-radio"></span>
+                      <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control-catalog-filter-item">
-                      <input class="control-input-radio" type="radio" name="hotels-group" value="motel">
-                        Мотель
+                      <input class="control-input" type="radio" name="hotels-group" value="motel">
+                      <span class="control-mark-radio"></span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control-catalog-filter-item">
-                      <input class="control-input-radio" type="radio" name="hotels-group" value="apartments">
-                        Аппартаменты
+                      <input class="control-input" type="radio" name="hotels-group" value="apartments">
+                      <span class="control-mark-radio"></span>
+                      <span class="control-label">Аппартаменты</span>
                     </label>
                   </li>
                 </ul>
@@ -124,18 +128,33 @@
 <!-- Здесь надо сделать ползунок -->
               <fieldset class="catalog-filter-group">
                 <legend class="control price-range">Стоимость, ₽:</legend>
-                <label class="control">
-                  <input type="number" name="min-interval" value="0">
-                    От
-                </label>
-                <label class="control">
-                  <input type="number" name="max-interval" value="9000">
-                    До
-                </label>
+
+                <div class="range">
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label">
+                      <input class="range-input" type="number" value="0" name="min-price" style="width: 80px; color: white"> от
+                    </label>
+                    <label class="catalog-filter-label">
+                      <input class="range-input" type="number" value="9000" name="max-price" style="width: 80px; color: white"> до
+                    </label>
+                  </div>
+
+                  <div class="range-scale">
+                    <div class="range-bar">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
               </fieldset>
               <div class="catalog-filter-group-button">
                 <button class="button catalog-header-button" type="submit">Применить</button>
-                <input class="reset" type="reset"></input>
+                <button class="reset" type="reset">Сбросить</button>
               </div>
             </form>
           </section>
