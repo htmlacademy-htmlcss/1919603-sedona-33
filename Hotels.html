@@ -71,7 +71,7 @@
           <section class="catalog-hotels-filter">
             <h2 class="visually-hidden">Фильтор списка отелей</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group-infrastructure">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
@@ -98,7 +98,7 @@
                 </ul>
               </fieldset>
 
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group-housing">
                 <legend class="catalog-filter-title">Тип жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
@@ -126,15 +126,15 @@
               </fieldset>
 
 <!-- Здесь надо сделать ползунок -->
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group-price">
                 <legend class="control price-range">Стоимость, ₽:</legend>
 
                 <div class="range">
                   <div class="range-wrapper-inputs">
-                    <label class="catalog-filter-label">
+                    <label class="catalog-filter-label-min">
                       <input class="range-input" type="number" value="0" name="min-price" style="width: 80px; color: white"> от
                     </label>
-                    <label class="catalog-filter-label">
+                    <label class="catalog-filter-label-max">
                       <input class="range-input" type="number" value="9000" name="max-price" style="width: 80px; color: white"> до
                     </label>
                   </div>
@@ -164,8 +164,8 @@
           <div class="catalog-hotel-group-header">
             <h2 class="control hotel-list-form-header-legend">Найдено гостиниц: 38</h2>
             <select class="select-control" aria-label="Сортировка">
-              <option value="popular">Сначала популярное</option>
               <option value="cheap">Сначала дешёвое</option>
+              <option value="popular">Сначала популярное</option>
               <option value="expensive">Сначала дорогое</option>
             </select>
             <ul class="catalog-hotels-search-list">
@@ -283,14 +283,14 @@
               </li>
             </ul>
             <div class="hotels-on-page-label">
-              <p class="hotels-on-page-label-title">
+              <label class="hotels-on-page-label-title">
                 Гостиниц на странице:
-              </p>
-              <select name="hotels-on-page" class="hotels-on-page">
-                <option value="4">4</option>
-                <option value="8">8</option>
-                <option value="12">12</option>
-              </select>
+                <select name="hotels-on-page" class="hotels-on-page">
+                  <option value="4">4</option>
+                  <option value="8">8</option>
+                  <option value="12">12</option>
+                </select>
+              </label>
             </div>
           </div>
         </section>
