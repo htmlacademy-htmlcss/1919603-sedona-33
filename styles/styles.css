@@ -398,7 +398,7 @@ body {
 .main-page-welcome {
   display: block;
   min-height: 485px;
-  margin: -5px auto;
+  margin: -4px auto;
   margin-bottom: 63px;
   text-align: center;
   background-image: url("../images/main-page/index-background.jpg");
@@ -634,14 +634,14 @@ body {
 
 .search-hotel-title {
   margin-top: 92px;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 
 .search-hotel-subtitle {
   width: 620px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 71px;
+  margin-bottom: 69px;
 }
 
 search-hotel {
