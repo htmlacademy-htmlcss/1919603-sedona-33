@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
@@ -376,7 +376,7 @@ body {
   width: 160px;
   min-height: 37px;
   align-self: center;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -644,12 +644,6 @@ body {
   margin-bottom: 69px;
 }
 
-search-hotel {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .search-hotel h2 {
   font-style: normal;
   font-weight: 700;
@@ -697,7 +691,7 @@ search-hotel {
   min-height: 60px;
   padding-top: 8px;
   padding-left: 22px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -710,7 +704,7 @@ search-hotel {
 .field-hotels {
   width: 600px;
   min-height: 60px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -888,7 +882,7 @@ search-hotel {
   margin-left: -5px;
   padding-top: 10px;
   padding-bottom: 5px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1006,7 +1000,7 @@ search-hotel {
   padding-right: 15px;
   text-align: left;
   font: inherit;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1275,7 +1269,7 @@ search-hotel {
   width: 160px;
   min-height: 48px;
   margin-bottom: 12px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -1294,7 +1288,7 @@ search-hotel {
   min-height: 32px;
   margin-bottom: 10px;
   padding: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1369,7 +1363,7 @@ search-hotel {
   height: 48px;
   margin-top: 18px;
   padding-left: 18px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1482,7 +1476,7 @@ search-hotel {
   width: 620px;
   min-height: 60px;
   margin: 30px auto;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1518,7 +1512,7 @@ search-hotel {
   width: 55px;
   height: 55px;
   margin-right: 8px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1579,7 +1573,7 @@ search-hotel {
   min-height: 48px;
   margin-left: 51px;
   padding-left: 15px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1688,7 +1682,7 @@ search-hotel {
 }
 
 .modal-field-date::placeholder {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1704,7 +1698,7 @@ search-hotel {
   height: 50px;
   padding-left: 19px;
   padding-right: 17px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1806,7 +1800,7 @@ search-hotel {
   height: 60px;
   align-self: center;
   align-items: center;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
