@@ -1614,7 +1614,6 @@ search-hotel {
 }
 
 .modal-container-close {
-  display: none;
 }
 
 .field-group-modal-number {
@@ -1721,7 +1720,6 @@ search-hotel {
   width: 15px;
   height: 15px;
   margin-left: 540px;
-  margin-top: -40px;
   background-image: url("../images/modal-win/date 1.png");
   background-position: center;
   background-repeat: no-repeat;
