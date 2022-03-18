@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
@@ -1869,6 +1869,7 @@ body {
 
 .modal-field-number-minus {
   position: absolute;
+  top: 355px;
   margin-left: 115px;
   font-style: normal;
   font-weight: 700;
@@ -1883,6 +1884,7 @@ body {
 
 .modal-field-number-plus {
   position: absolute;
+  top: 350px;
   margin-left: 195px;
   width: 13px;
   height: 13px;
