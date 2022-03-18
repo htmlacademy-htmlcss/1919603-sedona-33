@@ -1608,6 +1608,7 @@ body {
 }
 
 .modal-container-close {
+  display: none;
 }
 
 .field-group-modal-number {
