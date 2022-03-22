@@ -1590,7 +1590,6 @@ body {
 }
 
 .modal-container-close {
-  display: none;
 }
 
 .field-group-modal-number {
@@ -1623,7 +1622,7 @@ body {
   position: relative;
   width: 575px;
   margin: auto;
-  padding: 52.5px 70px 79.5px 70px;
+  padding: 62px 70px 70px 70px;
   background: #FFFFFF;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
@@ -1631,8 +1630,8 @@ body {
 
 .modal-close-button {
   position: absolute;
-  top: 45px;
-  right: 70px;
+  top: 55px;
+  margin-left: 522px;
   padding: 0;
   width: 53px;
   height: 53px;
@@ -1830,7 +1829,8 @@ body {
 
 .tooltip-text {
   position: absolute;
-  left: 50%;
+  top: 5px;
+  left: 15px;
   transform: translateX(-50%);
   z-index: 1;
   display: none;
@@ -1855,7 +1855,7 @@ body {
 
 .modal-field-number-minus {
   position: absolute;
-  top: 355px;
+  top: 365px;
   margin-left: 115px;
   font-style: normal;
   font-weight: 700;
@@ -1870,7 +1870,7 @@ body {
 
 .modal-field-number-plus {
   position: absolute;
-  top: 350px;
+  top: 360px;
   margin-left: 195px;
   width: 13px;
   height: 13px;
