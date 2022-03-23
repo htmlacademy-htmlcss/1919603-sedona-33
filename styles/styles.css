@@ -823,11 +823,6 @@ body {
   box-sizing: border-box;
 }
 
-#decor-item-htmlacademy:hover {
-  fill: #756257;
-  color: #756257;
-}
-
 .footer-social-button {
   display: flex;
   justify-content: center;
@@ -837,7 +832,7 @@ body {
   box-sizing: border-box;
 }
 
-#decor-item:hover {
+.footer-social-button:hover path {
  fill: #68A2CA;
 }
 
@@ -1169,17 +1164,17 @@ body {
   background-position: center;
 }
 
-.control-mark:hover {
+.control-input:hover + .control-mark {
   background: rgba(255, 255, 255, 0.6);
 }
 
-.control-mark:focus {
+.control-input:focus + .control-mark {
   background: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83B3D3;
   border-radius: 4px;
 }
 
-.control-mark:active {
+.control-input:active + .control-mark {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 }
@@ -1210,17 +1205,17 @@ body {
   background-position: center;
 }
 
-.control-mark-radio:hover {
+.control-input:hover + .control-mark-radio {
   background: rgba(255, 255, 255, 0.6);
 }
 
-.control-mark-radio:focus {
+.control-input:focus + .control-mark-radio {
   background: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83B3D3;
   border-radius: 50%;
 }
 
-.control-mark-radio:active {
+.control-input:active + .control-mark-radio {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
 }
@@ -1590,6 +1585,7 @@ body {
 }
 
 .modal-container-close {
+  display: none;
 }
 
 .field-group-modal-number {
