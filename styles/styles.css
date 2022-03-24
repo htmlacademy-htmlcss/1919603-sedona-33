@@ -70,6 +70,14 @@ body {
   fill: #756257;
 }
 
+.heart:hover .like{
+  color: rgba(117, 98, 87, 0.3);
+}
+
+.heart:active .like{
+  color: rgba(117, 98, 87, 0.3);
+}
+
 .loupe:active,
 .heart:active {
   color: rgba(117, 98, 87, 0.3);
@@ -100,10 +108,9 @@ body {
 }
 
 .hotel-card-button-favorites:active {
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #68A2CA;
   outline: 1px solid #756257;
-  opacity: 0.3;
 }
 
 .hotel-card-button-favorites-active:hover {
@@ -116,9 +123,8 @@ body {
 }
 
 .hotel-card-button-favorites-active:active {
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #6C9E42;
-  opacity: 0.3;
 }
 
 .field:hover {
@@ -199,7 +205,6 @@ body {
 }
 
 .breadcrumbs-link:focus {
-  padding: 5px;
   outline: 3px solid #83B3D3;
   border-radius: 4px;
 }
@@ -210,7 +215,7 @@ body {
 }
 
 .catalog-header-button:hover {
-  background-color: #83B3D3;
+  background-color: #68A2CA;
 }
 
 .catalog-header-button:focus {
@@ -313,7 +318,7 @@ body {
 }
 
 .navigation-item-active {
-  box-shadow: inset 0 -4px 0 0 #000000;
+  box-shadow: inset 0 -4px 0 0 #756257;
   padding: 20px 0;
   margin: auto 17px;
 }
@@ -1076,21 +1081,23 @@ body {
   width: 160px;
   list-style-type: none;
   margin-top: 0;
-  margin-left: 35px;
-  margin-bottom: 45px;
+  margin-left: 28px;
+  margin-bottom: 20px;
 }
 
 .breadcrumbs-item {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .breadcrumbs-link {
+  padding: 5px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 .catalog-hotels-filter {
@@ -1165,17 +1172,17 @@ body {
 }
 
 .control-input:hover + .control-mark {
-  background: rgba(255, 255, 255, 0.6);
+  opacity:  0.6;
 }
 
 .control-input:focus + .control-mark {
-  background: rgba(255, 255, 255, 0.6);
+  opacity:  0.6;
   outline: 3px solid #83B3D3;
   border-radius: 4px;
 }
 
 .control-input:active + .control-mark {
-  background: rgba(255, 255, 255, 0.3);
+  opacity:  0.3;
   border-radius: 4px;
 }
 
@@ -1205,18 +1212,12 @@ body {
   background-position: center;
 }
 
-.control-input:hover + .control-mark-radio {
-  background: rgba(255, 255, 255, 0.6);
-}
-
 .control-input:focus + .control-mark-radio {
-  background: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83B3D3;
   border-radius: 50%;
 }
 
 .control-input:active + .control-mark-radio {
-  background: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
 }
 
@@ -1500,6 +1501,26 @@ body {
   text-decoration: none;
 }
 
+.pagination-link-active {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  margin-right: 8px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
 .hotels-on-page-label {
   display: flex;
   flex-direction: row;
@@ -1585,7 +1606,6 @@ body {
 }
 
 .modal-container-close {
-  display: none;
 }
 
 .field-group-modal-number {
@@ -1723,6 +1743,8 @@ body {
 .modal-field-number-minus:focus,
 .modal-field-number-plus:focus {
   color: #000000;
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
 }
 
 .modal-form-adults .modal-field-number-minus:active,
@@ -1817,10 +1839,14 @@ body {
   width: 25px;
   height: 25px;
   text-align: center;
-  color: white;
+  color: #ffffff;
   background-color: #83B3D3;
   border-radius: 50%;
   border: none;
+}
+
+.tooltip-toggle:hover {
+  background-color: #68A2CA;
 }
 
 .tooltip-text {
@@ -1844,6 +1870,12 @@ body {
   border-radius: 10px;
 }
 
+.tooltip-triangle {
+  position: absolute;
+  margin-left: 98px;
+  bottom: 143px;
+}
+
 .tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
@@ -1851,8 +1883,10 @@ body {
 
 .modal-field-number-minus {
   position: absolute;
-  top: 365px;
-  margin-left: 115px;
+  top: 355px;
+  width: 25px;
+  height: 25px;
+  margin-left: 110px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1866,10 +1900,10 @@ body {
 
 .modal-field-number-plus {
   position: absolute;
-  top: 360px;
-  margin-left: 195px;
-  width: 13px;
-  height: 13px;
+  top: 355px;
+  width: 25px;
+  height: 25px;
+  margin-left: 190px;
   border: none;
   font-style: normal;
   font-weight: 700;
@@ -1883,7 +1917,7 @@ body {
 
 .modal-form-adults .modal-field-number-minus {
   position: absolute;
-  margin-left: 175px;
+  margin-left: 170px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1894,7 +1928,7 @@ body {
 
 .modal-form-adults .modal-field-number-plus {
   position: absolute;
-  margin-left: 255px;
+  margin-left: 250px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1902,7 +1936,6 @@ body {
   text-align: center;
   border: none;
 }
-
 
 input[type="number"] {
 	-moz-appearance: none;
